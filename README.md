@@ -1,7 +1,7 @@
 import qrcode
 
 def generate_qr(data, filename="qrcode.png"):
-    # تنظیمات QR Code
+    # QR Code settings
     qr = qrcode.QRCode(
         version=1,
         error_correction=qrcode.constants.ERROR_CORRECT_H,
@@ -11,11 +11,11 @@ def generate_qr(data, filename="qrcode.png"):
     qr.add_data(data)
     qr.make(fit=True)
 
-    # ساخت تصویر
+    # Create and save the image
     img = qr.make_image(fill_color="black", back_color="white")
     img.save(filename)
-    print(f"✅ QR Code ساخته شد و در فایل {filename} ذخیره شد.")
+    print(f"QR Code generated and saved as {filename}")
 
 if __name__ == "__main__":
-    text = input("متنی که میخوای QR Code بشه رو وارد کن: ")
+    text = input("Enter the text or URL to generate QR Code: ")
     generate_qr(text)
