@@ -103,7 +103,7 @@ if __name__ == "__main__":
 
     manager = TaskManager()
     manager.add_task("Write daily report")
-    manager.add_task("Review GitHub code")
+    manager.add_task("Review GitHub cod")
 
     print("\n📋 Task list:")
     manager.list_tasks()
