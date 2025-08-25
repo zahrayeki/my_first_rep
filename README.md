@@ -67,7 +67,7 @@ class TaskManager:
     def list_tasks(self):
         if not self.tasks:
             print("📭 No tasks found.")
-        for task in self.task:
+        for task in self.tasks:
             status = "✔️ Done" if task["done"] else "⏳ Pending"
             print(f"{task['id']} - {task['title']} ({status})")
 
