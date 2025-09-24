@@ -61,7 +61,7 @@ class TaskManager:
             "done": False,
             "created_at": datetime.now().strftime("%Y-%m-%d %H:%M:%S")
         }
-        self.tasks.append(task)
+        self.tasks.append(tasks)
         print(f"✅ Task '{title}' added.")
 
     def list_tasks(self):
