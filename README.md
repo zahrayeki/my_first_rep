@@ -12,7 +12,7 @@ def generate_qr(data, filename="qrcode.png"):
     qr.make(fit=True)
 
     # Create and save the image
-    img = qr.make_image(fill_color="black", back_color="white")
+    img = qr.make_image(fill_color="blac", back_color="white")
     img.save(filename)
     print(f"QR Code generate and saved as {filename}")
 
